@@ -25,7 +25,7 @@ const options = {
   },
   jwt: {
     secret: process.env.JWT_SECRET,
-    // encryption: true,
+    encryption: true,
   },
   pages: {},
   callbacks: {
@@ -43,7 +43,7 @@ const options = {
       return Promise.resolve(token);
     },
     session: async (session, user) => {
-        /* Pb with account linking, see : https://github.com/nextauthjs/next-auth/issues/625 */
+      /* Pb with account linking, see : https://github.com/nextauthjs/next-auth/issues/625 */
       session.user = user
       return Promise.resolve(session)
     }
