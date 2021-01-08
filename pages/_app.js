@@ -1,6 +1,7 @@
 import { Provider as ReduxProvider } from 'react-redux';
 import { Provider as NextAuthProvider } from 'next-auth/client';
 import store from '../redux';
+import '../style/pages/index.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

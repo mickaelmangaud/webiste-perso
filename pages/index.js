@@ -1,23 +1,23 @@
 import React from 'react';
-import { signIn, signOut, useSession } from 'next-auth/client';
-import Link from 'next/link';
-import { useDispatch } from 'react-redux';
-import { toggleMenuOpen } from '../redux/uiSlice';
+// import { signIn, signOut, useSession } from 'next-auth/client';
+// import Link from 'next/link';
+// import { useDispatch } from 'react-redux';
+// import { toggleMenuOpen } from '../redux/uiSlice';
 
 export default function Page() {
-  const [session, loading] = useSession();
-  const dispatch = useDispatch();
+  // const [session, loading] = useSession();
+  // const dispatch = useDispatch();
 
-  const toggleMenuOpenAction = () => dispatch(toggleMenuOpen());
+  // const toggleMenuOpenAction = () => dispatch(toggleMenuOpen());
 
-  if (loading) {
-    return <h1>Loading ...</h1>;
-  }
-  console.log('SESSION', session);
+  // if (loading) {
+  //   return <h1>Loading ...</h1>;
+  // }
+  // console.log('SESSION', session);
   return (
-    <>
-      <h1>Welcome friends !!</h1>
-      {!session && (
+    <main id="index">
+      <h1>www.mickaelmangaud.com</h1>
+      {/* {!session && (
         <>
           Not signed in <br />
           <button onClick={signIn}>Sign in</button>
@@ -32,7 +32,7 @@ export default function Page() {
       <Link href="/ssr">
         <a>SSR Page</a>
       </Link>
-      <button onClick={toggleMenuOpenAction}>ToggleMenu</button>
-    </>
+      <button onClick={toggleMenuOpenAction}>ToggleMenu</button> */}
+    </main>
   );
 }
