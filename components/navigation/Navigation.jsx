@@ -1,7 +1,9 @@
+import { NavigationWrapper } from './styles';
+
 export const Navigation = () => {
   return (
-    <div>
+    <NavigationWrapper>
       Navigation
-    </div>
+    </NavigationWrapper>
   )
 }
