@@ -1,9 +1,11 @@
+import { PageWrapper } from '../components';
+
 function SSR({ data }) {
   return (
-    <>
+    <PageWrapper>
       <h1>SSR Page</h1>
       <pre>{JSON.stringify(data, undefined, 2)}</pre>
-    </>
+    </PageWrapper>
   );
 }
 
